@@ -1,40 +1,23 @@
 {
-  "name": "fearless",
-  "version": "0.1.0",
+  "name": "fearlesstech",
+  "type": "module",
+  "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@astrojs/react": "^1.2.2",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "astro": "^1.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.0",
-    "react-scripts": "5.0.1",
-    "styled-components": "^5.3.6",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-icons": "^4.7.1",
+    "sass": "^1.57.1"
   }
 }

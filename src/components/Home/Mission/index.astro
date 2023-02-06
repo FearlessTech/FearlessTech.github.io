@@ -1,0 +1,75 @@
+---
+import { mission_styles } from '../../../styles/colors';
+---
+
+<style
+  lang='scss'
+  define:vars={{
+    TEXT_PINK: mission_styles.TEXT_PINK,
+    TEXT_LT_PINK: mission_styles.TEXT_LT_PINK,
+  }}
+>
+  .mission {
+    display: flex;
+    height: max(100vh, 500px);
+    min-height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    * {
+      color: white;
+    }
+
+    .right {
+      .h1 {}
+      .p {}
+      .border {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #f61cc7, #06626a) 1;
+        max-width: 100%;
+        width: 400px;
+        padding: 1rem;
+        p {
+          font-size: 24px;
+          color: var(--TEXT_PINK);
+        }
+      }
+    }
+
+    .left {
+      .img-wrapper {
+        height: 700px;
+        min-height: 100%;
+        img {
+          height: 100%;
+        }
+      }
+    }
+
+  } 
+</style>
+
+<div class='mission'>
+
+  <div class='left'>
+    <div class='img-wrapper'>
+      <img src='/images/red_wolf.png' alt='Red Wolf' />
+    </div>
+  </div>
+
+  <div class='right'>
+    <h1>FearlessTech’s Mission</h1>
+    <p>
+      We strive to be a friendly and responsive group of collaborators who are all
+      learning from and teaching one another.
+    </p>
+    <div class='border'>
+      <p>
+        Our goal is to be inclusive to the largest number of contributors, with the
+        most diverse backgrounds from everywhere in the World.
+      </p>
+    </div>
+  </div>
+</div>

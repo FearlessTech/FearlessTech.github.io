@@ -1,0 +1,74 @@
+---
+import { pitch_styles } from '../../../styles/colors';
+---
+
+<style
+  lang='scss'
+  define:vars={{
+    TEXT_PURPLE: pitch_styles.TEXT_PURPLE,
+    TEXT_LT_PURPLE: pitch_styles.TEXT_LT_PURPLE,
+  }}
+>
+  .pitch {
+    display: flex;
+    height: max(100vh, 500px);
+    min-height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    * {
+      color: white;
+    }
+
+    .left {
+      .img-wrapper {
+        height: 700px;
+        min-height: 100%;
+        img {
+          height: 100%;
+        }
+      }
+    }
+    
+    .right{
+      .border {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #f61cc7, #06626a) 1;
+        max-width: 100%;
+        width: 400px;
+        padding: 1rem;
+        p {
+          font-size: 24px;
+          color: var(--TEXT_PURPLE);
+        }
+      }
+    }
+
+  } 
+</style>
+
+
+<div class='pitch'>
+  <div class='left'>
+    <div class='img-wrapper'>
+      <img src='./images/purple_wolf.png' alt='Purple Wolf' />
+    </div>
+  </div>
+
+  <h1>Pitch a Project!</h1>
+  <h6> All ideas are welcome.</h6>
+  <p>
+    Do you have an idea of a way we could write a program that could improve a communities daily life?  
+    There is no wrong community, nor to small of a community.
+  </p>
+  <div class='border'>
+    <p>
+      Is to write a sprinkler system for parts of the world facing doubts? 
+      Do you want to write and an epic Dungeon's and Dragons game?
+    </p>
+  </div>
+  
+  
+</div>

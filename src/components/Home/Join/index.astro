@@ -1,0 +1,71 @@
+---
+import { join_styles } from '../../../styles/colors';
+---
+
+<style
+  lang='scss'
+  define:vars={{
+    TEXT_GREEN: join_styles.TEXT_GREEN,
+    TEXT_LT_GREEN: join_styles.TEXT_LT_GREEN,
+  }}
+>
+  .join {
+    display: flex;
+    height: max(100vh, 500px);
+    min-height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    * {
+      color: white;
+    }
+
+    .left {
+      .border {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #f61cc7, #06626a) 1;
+        max-width: 100%;
+        width: 400px;
+        padding: 1rem;
+        p {
+          font-size: 24px;
+          color: var(--TEXT_GREEN);
+        }
+      }
+    }
+
+    .right {
+      .img-wrapper {
+        height: 700px;
+        min-height: 100%;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  } 
+</style>
+
+
+<div class='join'>
+  <h1>Join to Our Pack</h1>
+  <p>
+    Would you like to become a member of FearlessTech? Rather you are
+    programming, mentoring, or just telling your friends about us.
+  </p>
+  <div class='border'>
+    <p>
+      Any kind of valid contribution will be accepted and youll be able to show
+      our awesome organization from your GitHub profile
+    </p>
+  </div>
+  
+
+  <div class='right'>
+    <div class='img-wrapper'>
+      <img src='public/images/green_wolf.png' alt='Green Wolf' />
+    </div>
+  </div>
+</div>
