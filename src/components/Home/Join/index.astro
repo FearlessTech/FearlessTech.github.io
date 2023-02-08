@@ -22,22 +22,50 @@ import { join_styles } from '../../../styles/colors';
     }
 
     .left {
-      .border {
-        border-width: 2px;
-        border-style: solid;
-        border-image: linear-gradient(to right, #f61cc7, #06626a) 1;
-        max-width: 100%;
-        width: 400px;
-        padding: 1rem;
+      flex: 3 1 250px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 3rem;
+      h1 {
+        font-size: 50px;
+        font-weight: 400;
+        margin-top: 5rem;
+        line-height: 3.5rem;
+        color: var(--TEXT_LT_GREEN);
+        margin-bottom: 3rem;
+      }
+      .toleft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 3rem;
+        margin-top: 3rem;
+        height: 100%;
+        row-gap: 3rem;
+        max-width: 670px;
         p {
-          font-size: 24px;
-          color: var(--TEXT_GREEN);
+          font-weight: 300;
+          font-size: 26px;
+          line-height: 35px;
+        }
+        .border {
+          border-width: 2px;
+          border-style: solid;
+          border-image: linear-gradient(to right, #f61cc7, #06626a) 1;
+          max-width: 600px;
+          padding: 1rem;
+          p {
+            font-size: 24px;
+            color: var(--TEXT_GREEN);
+          }
         }
       }
     }
 
     .right {
       .img-wrapper {
+        display: flex;
+        justify-content: flex-end;
         height: 700px;
         min-height: 100%;
         img {
@@ -45,23 +73,28 @@ import { join_styles } from '../../../styles/colors';
         }
       }
     }
-  } 
+  }
 </style>
 
-
 <div class='join'>
-  <h1>Join to Our Pack</h1>
-  <p>
-    Would you like to become a member of FearlessTech? Rather you are
-    programming, mentoring, or just telling your friends about us.
-  </p>
-  <div class='border'>
-    <p>
-      Any kind of valid contribution will be accepted and youll be able to show
-      our awesome organization from your GitHub profile
-    </p>
+  <div class='left'>
+    <h1>Join to Our Pack</h1>
+    <div class='toleft'>
+      <p>
+        <span>Would you like to become a member of FearlessTech?</span>
+        <span
+          >Rather you are programming, mentoring, or just telling your friends
+          about us.</span
+        >
+      </p>
+      <div class='border'>
+        <p>
+          Any kind of valid contribution will be accepted and youll be able to
+          show our awesome organization from your GitHub profile
+        </p>
+      </div>
+    </div>
   </div>
-  
 
   <div class='right'>
     <div class='img-wrapper'>
